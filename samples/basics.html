@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<!-- There are JavaScript sample codes in bottom. -->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery.gpTile</title>
+  <style type="text/css">
+body {
+    font-family: "Times", "Times New Roman", serif;
+}
+pre {
+    background-color: #fffff0;
+    border: ridge 2px;
+    display: inline-block;
+    font-family: 'Courier', 'Courier New', monospace;
+    padding: 1em;
+}
+.tiled {
+    background-image: url("Mitsubaaoi.gif");
+    border: solid 2px rgb(0, 52, 0);
+    height: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-shadow: 1px 1px 0 #fff;
+    width: 300px;
+}
+  </style>
+</head>
+<body>
+  <h1>jQuery.gpTile</h1>
+  <div id="main">
+    <p>Show favicon to links.</p>
+    <p>for: IE 6+, Firefox, Chrome, Safari, Opera</p>
+    <p>
+      <pre>$(elem).gpTile();</pre>
+    </p>
+    <p>
+      See sample codes in HTML source,<br />
+      and more informations in: <a href="http://ginpen.com/jquery/gptile/">Ginpen.com</a>.
+    </p>
+    <div class="tiled">This is not applied.</div>
+    <div id="target" class="tiled">
+      This block is applied jQuery.gpTile.
+      <br />
+      Its size is adjusted against background image size.
+    </div>
+    <p>
+      The image file "Mitsubaaoi" is fixed by Takanashi Ginpei.
+      <br />
+      The original file is here: <a href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Mitsubaaoi.svg">ファイル:Mitsubaaoi.svg - Wikipedia</a>.
+      <br />
+      It is released under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons — Attribution-ShareAlike 3.0 Unported — CC BY-SA 3.0</a>.
+    </p>
+  </div>
+  <div>
+    <script src="jquery-1.6.2.min.js"></script>
+    <script src="../jquery.gptile-1.0.js"></script>
+    <script>
+(function() {
+  $('#target').gpTile();
+}());
+    </script>
+  </div>
+</body>
+</html>
